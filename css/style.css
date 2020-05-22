@@ -1,0 +1,158 @@
+/* ================================General====================================*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+}
+.full-reset{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+        background-color: black;
+}
+.cover-background{
+	background-attachment: fixed;
+	background-color: #fff;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    margin: 0;
+	padding:0;
+	width: 100%;
+}
+.page-container{
+	background-color: transparent;
+    height: 100%; 
+    height: auto !important;
+    min-height: 100%;
+    position: relative;
+}
+.content-page{
+    padding-bottom: 200px;
+}
+.footer{
+	background-color: #000;
+	bottom: 0 !important;
+    bottom: -1px;
+	color: #9f9f9f;
+	height: 200px; 
+	overflow: hidden;
+    position: relative;
+	width: 100%;
+}
+.section{
+	margin: 0;
+	padding: 50px 0;
+	width: 100%;
+}
+.center-box-content{
+	margin: 0 auto;
+}
+.tittles-pages{
+	font-family: 'Lobster', cursive;
+	font-size: 40px;
+}
+/* ================================NavBar====================================*/
+.nav-phonestore{
+	background-color: #000;
+	height: 55px;
+	position: relative;
+}
+.logo{
+    float: left;
+    height: 55px;
+    width: 30%;
+    line-height: 55px;   
+    color: #fff;
+    text-align: center;
+}
+.navigation-list{
+    float: left;
+    height: 55px;
+    text-align: center;
+    width: 70%;
+    text-align: right; 
+}
+.navigation-list > li{
+    display: inline-block;
+    height: 55px;
+}
+.navigation-list > li a{
+	height: 55px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	line-height: 55px;
+	padding: 0 7px;
+}
+.navigation-list > li a:hover{
+	color:rgb(231,76,60)
+}
+
+/* ================================Styles Product====================================*/
+.content-carousel{
+	background-color: #000;
+	margin: 0;
+    padding: 0;
+	width: 100%;
+}
+.static-image-carousel{
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+
+.img-background{
+	width: 200px;
+	height: 200px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 15px auto 0;
+}
+#tostyBGImg{
+	background-image: url(../img/lagarto-tosty-pikitos.png);
+}
+#kyttyBGImg{
+	background-image: url(../img/kitty.png);
+}
+#dPinosBGImg{
+	background-image: url(../img/logo_dos_pinos.png);
+}
+#bimboBGImg{
+	background-image: url(../img/bby.png);
+}
+.thumbnail.thumbnail-content-phones img{
+	width: 100%;
+}
+#leche_img{
+	width: 200px;
+	height: 200px;
+	
+}
+#carrito_img{
+	width: 200px;
+	height: 175px;
+}
+#jugo_img{
+	width: 200px;
+	height: 175px;
+}
+#helado_img{
+	width: 200px;
+	height: 200px;
+}
+#azucar_img{
+	width: 200px;
+	height: 200px;
+}
+#arroz_img{
+	width: 200px;
+	height: 210px;
+}
