@@ -11,7 +11,7 @@
     <body>
         <div class="col-md-4  d-flex justify-content-start ">
            
-           <a href="./Index_proyecto.html"  class="btn btn-danger ">inicio</a>
+            <a href="./Pag_Inicio.php"  class="btn btn-danger ">inicio</a>
                
        </div>
         <div class="container" >

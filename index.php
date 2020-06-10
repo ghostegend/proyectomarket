@@ -26,37 +26,41 @@
                 <div class="col-12 user-img">
                     <img src="./img/avatar.png"/>
                 </div>
-                <form id='login' class="col-12" method="get">
+                <form id='login' class="col-12" method="POST">
                     <div class="form-group" id="user-group">
-                        <input type="text" class="form-control" placeholder="Nombre de usuario" id="username"/>
+                        <input type="text" class="form-control" placeholder="Nombre de usuario" id="username" name="user"/>
                     </div>
                     <div class="form-group" id="contrasena-group">
-                        <input type="password" class="form-control" placeholder="Contraseña" id="password"/>
+                        <input type="password" class="form-control" placeholder="Contraseña" id="password" name="pass"/>
                     </div>
                     <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar </button>
                 </form>
                 <div class="col-12 forgot">
                     <a href="#">Recordar Contraseña?</a>
                 </div>
-               
+                <?php
+    require_once 'Empleado.php';
+    
+    if(isset($_POST["user"]) && isset($_POST["pass"])){
+        $obEmpleado= new Empleado();
+        
+        $obEmpleado->setuser($_POST["user"]);
+        $obEmpleado->setpassword($_POST["pass"]);
+        
+        $resultado = $obEmpleado->IniciarSecion();
+        if($resultado){
+            header('Location: Mantenimiento_Usuario.php');
+    } else {
+        echo '<br>';
+        echo '<h5 class= "text-danger"><strong> Error al iniciar sesion</h5>';
+         echo '<p class= "text-danger"> Clave o Usuario incorrecto</p>';
+    }        
+}
+    ?>
             </div>
         </div>
     </div>
-		<script type="text/javascript">
-			document.getElementById( 'login').addEventListener( 'submit' , ( event ) => {
-			event.preventDefault();
-				let user = document.getElementById( 'username' ).value;
-				let pass = document.getElementById( 'password' ).value;
-				if (user === 'admin' && pass == '123') {
-					document.location.href = 
-						// si necesita comprobar el login hay que cambiar la direccin de su pc, porque se hizo con un event.
-						'C:/Users/Nelson%20Z/Desktop/segundo%20avance/segundo_avance_2/index_proyecto.html'
-				}
-				else{
-				alert("Introdujo un dato invalido o vacio");
-				}
-			})
-			
-		</script>
+   
+	
 </body>
 </html>

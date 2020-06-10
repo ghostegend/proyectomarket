@@ -22,9 +22,9 @@ $conn = new mysqli($servername, $username, $password,$db);
 
 // Check connection
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+  die("Coneccion fallida: " . $conn->connect_error);
 }
-echo "Connected successfully";
+echo "Conectado correctamwnte";
 if(isset($_POST["numero_factura"])&& isset ($_POST["id_empleado"]) && isset ($_POST["fecha"]) && isset ($_POST["nombre"])&& 
         isset ($_POST["cedula"]) &&  isset ($_POST["vp_venta"])&& isset($_POST["sub_total"])&& isset($_POST["total"])){
     

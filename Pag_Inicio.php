@@ -19,8 +19,8 @@
                     PRODUCTOS
                 </div>
                  <ul class="list-unstyled full-reset navigation-list">
-                    <li><a href="./Index_proyecto.html">Inicio</a></li>
-                    <li><a href="./Index_proyecto.html">Productos</a></li>
+                     <li><a href="./Pag_Inicio.php">Inicio</a></li>
+                    <li><a href="./Pag_Inicio.php">Productos</a></li>
                     <li><a href="./Detalle_proyecto.html">Detalle</a></li>
                     <li><a href="./Facturazion_proyecto.html">Facturacion</a></li>
                     <li> <form class="form-inline">
